@@ -36,6 +36,7 @@ Partial Class Form1
         Panel2 = New Panel()
         Label1 = New Label()
         TextBox1 = New TextBox()
+        Button8 = New Button()
         Panel1.SuspendLayout()
         Panel3.SuspendLayout()
         SuspendLayout()
@@ -116,6 +117,7 @@ Partial Class Form1
         ' Panel3
         ' 
         Panel3.BackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
+        Panel3.Controls.Add(Button8)
         Panel3.Controls.Add(Button1)
         Panel3.Controls.Add(ListView1)
         Panel3.Controls.Add(Button7)
@@ -198,6 +200,16 @@ Partial Class Form1
         TextBox1.Size = New Size(298, 32)
         TextBox1.TabIndex = 21
         ' 
+        ' Button8
+        ' 
+        Button8.Font = New Font("Century Gothic", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button8.Location = New Point(407, 12)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(39, 30)
+        Button8.TabIndex = 30
+        Button8.Text = "X"
+        Button8.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -228,5 +240,6 @@ Partial Class Form1
     Friend WithEvents Button7 As Button
     Friend WithEvents ListView1 As ListView
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button8 As Button
 
 End Class
