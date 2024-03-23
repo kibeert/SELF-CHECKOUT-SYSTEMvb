@@ -37,6 +37,7 @@ Partial Class Form1
         Panel2 = New Panel()
         Label1 = New Label()
         TextBox1 = New TextBox()
+        Button8 = New Button()
         Panel1.SuspendLayout()
         Panel3.SuspendLayout()
         SuspendLayout()
@@ -209,6 +210,16 @@ Partial Class Form1
         TextBox1.PlaceholderText = "enter product name"
         TextBox1.Size = New Size(298, 32)
         TextBox1.TabIndex = 21
+        ' 
+        ' Button8
+        ' 
+        Button8.Font = New Font("Century Gothic", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button8.Location = New Point(407, 12)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(39, 30)
+        Button8.TabIndex = 30
+        Button8.Text = "X"
+        Button8.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 

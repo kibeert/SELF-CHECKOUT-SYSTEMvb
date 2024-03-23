@@ -26,6 +26,8 @@ Partial Class Cart
         ListView1 = New ListView()
         Button3 = New Button()
         Panel3 = New Panel()
+        Button6 = New Button()
+        Button5 = New Button()
         Button4 = New Button()
         Button2 = New Button()
         Button1 = New Button()
@@ -75,6 +77,8 @@ Partial Class Cart
         ' Panel3
         ' 
         Panel3.BackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
+        Panel3.Controls.Add(Button6)
+        Panel3.Controls.Add(Button5)
         Panel3.Controls.Add(Button4)
         Panel3.Controls.Add(Button2)
         Panel3.Controls.Add(Button1)
@@ -84,14 +88,34 @@ Partial Class Cart
         Panel3.Size = New Size(468, 585)
         Panel3.TabIndex = 19
         ' 
+        ' Button6
+        ' 
+        Button6.Font = New Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button6.Location = New Point(278, 370)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(137, 46)
+        Button6.TabIndex = 26
+        Button6.Text = "Back"
+        Button6.UseVisualStyleBackColor = True
+        ' 
+        ' Button5
+        ' 
+        Button5.Font = New Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button5.Location = New Point(405, 19)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(35, 35)
+        Button5.TabIndex = 25
+        Button5.Text = "X"
+        Button5.UseVisualStyleBackColor = True
+        ' 
         ' Button4
         ' 
         Button4.BackColor = Color.White
         Button4.Font = New Font("Century Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button4.Location = New Point(47, 370)
+        Button4.Location = New Point(56, 370)
         Button4.Margin = New Padding(3, 2, 3, 2)
         Button4.Name = "Button4"
-        Button4.Size = New Size(368, 46)
+        Button4.Size = New Size(169, 46)
         Button4.TabIndex = 24
         Button4.Text = "Home"
         Button4.UseVisualStyleBackColor = False
@@ -143,7 +167,7 @@ Partial Class Cart
         ' 
         ' Cart
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(978, 585)
         Controls.Add(Panel1)
@@ -166,4 +190,6 @@ Partial Class Cart
     Friend WithEvents Label1 As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button5 As Button
 End Class
