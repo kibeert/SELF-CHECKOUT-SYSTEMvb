@@ -29,6 +29,7 @@ Partial Class Form1
         Button5 = New Button()
         Button6 = New Button()
         Panel3 = New Panel()
+        Button8 = New Button()
         Button1 = New Button()
         ListView1 = New ListView()
         Button7 = New Button()
@@ -95,11 +96,11 @@ Partial Class Form1
         ' Button5
         ' 
         Button5.BackColor = Color.White
-        Button5.Font = New Font("Century Gothic", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button5.Location = New Point(340, 313)
+        Button5.Font = New Font("Century Gothic", 14.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button5.Location = New Point(291, 313)
         Button5.Margin = New Padding(3, 2, 3, 2)
         Button5.Name = "Button5"
-        Button5.Size = New Size(143, 30)
+        Button5.Size = New Size(192, 30)
         Button5.TabIndex = 24
         Button5.Text = "add item to cart"
         Button5.UseVisualStyleBackColor = False
@@ -116,6 +117,7 @@ Partial Class Form1
         ' Panel3
         ' 
         Panel3.BackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
+        Panel3.Controls.Add(Button8)
         Panel3.Controls.Add(Button1)
         Panel3.Controls.Add(ListView1)
         Panel3.Controls.Add(Button7)
@@ -126,9 +128,19 @@ Partial Class Form1
         Panel3.Size = New Size(468, 585)
         Panel3.TabIndex = 19
         ' 
+        ' Button8
+        ' 
+        Button8.Font = New Font("Century Gothic", 15.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button8.Location = New Point(405, 19)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(51, 37)
+        Button8.TabIndex = 30
+        Button8.Text = "X"
+        Button8.UseVisualStyleBackColor = True
+        ' 
         ' Button1
         ' 
-        Button1.Font = New Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.Font = New Font("Century Gothic", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.Location = New Point(263, 435)
         Button1.Name = "Button1"
         Button1.Size = New Size(119, 23)
@@ -147,7 +159,7 @@ Partial Class Form1
         ' 
         ' Button7
         ' 
-        Button7.Font = New Font("Century Gothic", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button7.Font = New Font("Century Gothic", 15.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button7.Location = New Point(82, 510)
         Button7.Name = "Button7"
         Button7.Size = New Size(75, 32)
@@ -158,7 +170,7 @@ Partial Class Form1
         ' Button4
         ' 
         Button4.BackColor = Color.White
-        Button4.Font = New Font("Century Gothic", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button4.Font = New Font("Century Gothic", 14.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button4.Location = New Point(334, 512)
         Button4.Margin = New Padding(3, 2, 3, 2)
         Button4.Name = "Button4"
@@ -190,7 +202,7 @@ Partial Class Form1
         ' 
         ' TextBox1
         ' 
-        TextBox1.Font = New Font("Segoe UI", 14F)
+        TextBox1.Font = New Font("Segoe UI", 14.0F)
         TextBox1.Location = New Point(53, 212)
         TextBox1.Margin = New Padding(3, 2, 3, 2)
         TextBox1.Name = "TextBox1"
@@ -200,7 +212,7 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(978, 585)
         Controls.Add(Panel1)
@@ -228,5 +240,6 @@ Partial Class Form1
     Friend WithEvents Button7 As Button
     Friend WithEvents ListView1 As ListView
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button8 As Button
 
 End Class

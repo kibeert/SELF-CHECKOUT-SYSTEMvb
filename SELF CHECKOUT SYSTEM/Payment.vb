@@ -18,7 +18,7 @@ Public Class Payment
                 total += itemPrice
             End If
         Next
-        TextBox2.Text = total.ToString("C") ' Display total price as currency
+        TextBox2.Text = "ksh" & total.ToString("N2") ' Display total price as currency
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
