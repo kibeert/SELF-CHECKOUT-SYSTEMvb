@@ -105,6 +105,7 @@ Partial Class Form1
         Button5.TabIndex = 24
         Button5.Text = "add item to cart"
         Button5.UseVisualStyleBackColor = False
+        Button5.AutoEllipsis = False
         ' 
         ' Button6
         ' 
