@@ -34,7 +34,7 @@ Upon running the application, you'll be presented with the main checkout screen.
 2. View the running total and list of scanned items.
 3. Apply any relevant discounts or promotions.
 4. Proceed to payment by selecting the "Pay" button.
-5. Choose payment method (cash or card) and follow the prompts.
+5. Choose payment method (cash ) and follow the prompts.
 6. Upon successful payment, a receipt will be printed.
 
 ## Contributing
